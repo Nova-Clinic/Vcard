@@ -61,7 +61,7 @@
     }
     .intro-photo img, .intro-photo video { width:100%; height:100%; object-fit:cover; }
     .brand-logo {
-      width: 112px; height: 96px; display: grid; place-items:center;
+      width: 150px; height: 128px; display: grid; place-items:center;
       background: transparent; color: white; margin: 0 auto 5px;
     }
     .logo-img { display:block; width:100%; height:100%; object-fit:contain; }
@@ -82,7 +82,7 @@
     .topbar { display:flex; justify-content:flex-end; margin-bottom:6px; }
     .menu-btn { border:1px solid var(--line); background:#fff; border-radius:50%; width:44px; height:44px; color:var(--blue-dark); box-shadow:var(--shadow); cursor:pointer; }
     .hero { text-align:center; padding:12px 14px 20px; }
-    .hero .brand-logo { width:112px; height:94px; }
+    .hero .brand-logo { width:150px; height:126px; }
     .hero h2 { margin:8px 0 5px; font-size:1.35rem; }
     .doctor { font-size:1.02rem; font-weight:700; margin:0 0 6px; }
     .specialty { color:var(--muted); font-size:.88rem; margin:0; }
@@ -128,9 +128,22 @@
       .phone-grid { grid-template-columns:1fr; }
       .hours-row { font-size:.82rem; }
       .intro-photo { height:185px; }
+      .brand-logo { width:138px; height:118px; }
+      .hero .brand-logo { width:138px; height:116px; }
     }
     @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; } }
-  </style>
+  
+    .brand-logo { width: 112px !important; height: 112px !important; background: transparent !important; box-shadow: none !important; border-radius: 0 !important; margin: 0 auto 2px !important; }
+    .brand-logo img { display:block; width:100%; height:100%; object-fit:contain; }
+    .nova-wordmark { display:block; width:150px; height:auto; max-height:48px; object-fit:contain; margin:0 auto 10px; }
+    .intro .brand-logo { width:136px !important; height:136px !important; }
+    .intro .nova-wordmark { width:140px; }
+    @media (max-width:420px) {
+      .brand-logo { width:104px !important; height:104px !important; }
+      .intro .brand-logo { width:126px !important; height:126px !important; }
+      .nova-wordmark { width:138px; }
+    }
+    </style>
 </head>
 <body>
   <!-- INTRO: replace the placeholder with a real clinic image/video later if desired. -->
