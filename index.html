@@ -79,15 +79,13 @@
     }
     .skip-btn { background:transparent; border:0; color:#388fce; padding:12px; cursor:pointer; }
     main { width:min(100%, 720px); margin:0 auto; padding:22px 15px 40px; }
-    .topbar { display:flex; justify-content:flex-end; margin-bottom:6px; }
-    .menu-btn { border:1px solid var(--line); background:#fff; border-radius:50%; width:44px; height:44px; color:var(--blue-dark); box-shadow:var(--shadow); cursor:pointer; }
     .hero { text-align:center; padding:12px 14px 20px; }
     .hero .brand-logo { width:150px; height:126px; }
     .hero h2 { margin:8px 0 5px; font-size:1.35rem; }
     .doctor { font-size:1.02rem; font-weight:700; margin:0 0 6px; }
     .specialty { color:var(--muted); font-size:.88rem; margin:0; }
     .description-short { line-height:1.9; color:var(--muted); font-size:.9rem; max-width:540px; margin:14px auto 0; }
-    .quick-actions { display:grid; grid-template-columns:repeat(4,1fr); gap:9px; margin:0 0 13px; }
+    .quick-actions { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:9px; margin:0 0 13px; }
     .quick-action {
       min-width:0; background:var(--card); border:1px solid #e2f1fc; border-radius:17px;
       box-shadow:var(--shadow); padding:13px 5px 11px; display:flex; align-items:center; flex-direction:column; gap:7px;
@@ -113,23 +111,63 @@
     .address-text, .long-description { line-height:2; font-size:.9rem; margin:0; color:#416987; }
     .outline-link { display:inline-flex; align-items:center; gap:7px; color:#2389d5; font-size:.86rem; font-weight:700; margin-top:12px; }
     .booking { width:100%; margin:12px 0 10px; }
-    .socials { display:flex; justify-content:center; flex-wrap:wrap; gap:10px; padding:2px 0 14px; }
-    .social-btn { width:44px; height:44px; border-radius:15px; display:grid; place-items:center; color:white; font-size:1.1rem; font-weight:700; background:linear-gradient(140deg,#53b7f3,#247fca); box-shadow:0 6px 14px rgba(41,151,229,.16); }
+    .social-list { display:flex; flex-direction:column; gap:10px; padding-bottom:4px; }
+    .social-row { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:11px 12px; border:1px solid var(--line); border-radius:15px; background:rgba(255,255,255,.62); }
+    .social-name { display:flex; align-items:center; gap:10px; min-width:0; font-size:.88rem; font-weight:700; }
+    .social-icon { width:36px; height:36px; flex:0 0 36px; display:grid; place-items:center; border-radius:12px; background:#edf7ff; color:var(--blue-dark); border:1px solid #dceffc; }
+    .social-icon svg { width:21px; height:21px; display:block; }
+    .social-icon.instagram { color:#a84b87; background:#fff2f8; border-color:#f5ddeb; }
+    .social-icon.telegram { color:#287fb4; background:#edf8ff; border-color:#d9effc; }
+    .social-icon.whatsapp { color:#27845b; background:#effaf4; border-color:#d9f0e3; }
+    .social-icon.website { color:#287bb5; background:#eef7ff; border-color:#dceffc; }
+    .social-icon.other { color:#6d72b6; background:#f3f3ff; border-color:#e4e4fb; }
+    .social-row .small-btn { text-align:center; white-space:nowrap; flex-shrink:0; }
+    .services-section { line-height:1.9; }
+    .service-group { padding:13px 0; border-bottom:1px solid var(--line); }
+    .service-group:last-child { border-bottom:0; padding-bottom:0; }
+    .service-group h4 { color:var(--blue-dark); font-size:.94rem; margin:0 0 8px; padding-right:10px; border-right:3px solid var(--blue); }
+    .service-group p { color:#416987; font-size:.87rem; line-height:2; margin:0 0 8px; }
+    .service-group ul { margin:0; padding-right:22px; color:#416987; font-size:.87rem; }
+    .service-group li { padding:3px 0; }
+    .service-group li::marker { color:var(--blue); }
+    .doctor-resume-section { min-height:74px; }
+    .doctor-resume-section .section-title { margin-bottom:0; }
+    .bank-list { display:grid; grid-template-columns:1fr; gap:12px; }
+    .bank-item { border:1px solid var(--line); border-radius:14px; padding:13px; min-width:0; }
+    .bank-label { color:var(--accent, #2389d5); font-size:.95rem; font-weight:700; margin-bottom:12px; }
+    .bank-entry + .bank-entry { border-top:1px solid var(--line); margin-top:12px; padding-top:12px; }
+    .bank-field-label { color:var(--muted); font-size:.78rem; margin-bottom:7px; }
     .bank-card { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
-    .bank-number { direction:ltr; unicode-bidi:embed; font-size:1rem; letter-spacing:.06em; font-weight:700; overflow-wrap:anywhere; }
+    .bank-number { direction:ltr; unicode-bidi:embed; font-size:1rem; letter-spacing:.04em; font-weight:700; overflow-wrap:anywhere; }
     .copy-btn { flex-shrink:0; }
     .footer { text-align:center; color:#7da5c4; padding:20px 10px 4px; font-size:.8rem; direction:ltr; letter-spacing:.08em; }
     .toast { position:fixed; z-index:30; bottom:22px; left:50%; transform:translate(-50%,20px); opacity:0; pointer-events:none; transition:.25s; background:#15518a; color:white; padding:12px 18px; border-radius:999px; box-shadow:var(--shadow); font-size:.88rem; white-space:nowrap; }
     .toast.show { opacity:1; transform:translate(-50%,0); }
     @media (max-width:420px) {
       main { padding:13px 11px 28px; }
-      .quick-actions { gap:6px; }
+      .quick-actions { grid-template-columns:repeat(3,minmax(0,1fr)); gap:7px; }
       .quick-action { font-size:.72rem; }
       .phone-grid { grid-template-columns:1fr; }
+      .social-row { gap:7px; padding:9px; }
+      .social-row .small-btn { font-size:.7rem; padding:7px 8px; }
+      .social-name { font-size:.82rem; gap:7px; }
+      .social-icon { width:32px; height:32px; flex-basis:32px; }
       .hours-row { font-size:.82rem; }
       .intro-photo { height:185px; }
       .brand-logo { width:138px; height:118px; }
       .hero .brand-logo { width:138px; height:116px; }
+    }
+    /* بهینه‌سازی موبایل و لمس */
+    .quick-action, .small-btn, .primary-btn { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+    .section { scroll-margin-top:12px; }
+    .quick-action { min-height:88px; justify-content:center; }
+    .primary-btn { text-align:center; }
+    @media (max-width:360px) {
+      .quick-actions { gap:6px; }
+      .quick-action { padding:10px 3px; font-size:.69rem; border-radius:14px; }
+      .action-icon { width:34px; height:34px; border-radius:11px; }
+      .section { padding:15px 12px; border-radius:17px; }
+      .bank-number { font-size:.9rem; }
     }
     @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; } }
   
@@ -143,11 +181,21 @@
       .intro .brand-logo { width:126px !important; height:126px !important; }
       .nova-wordmark { width:138px; }
     }
-    </style>
+    
+    /* Single combined logo asset: emblem + NOVA wordmark */
+    .brand-combined { display:block; width:250px; max-width:76vw; height:auto; object-fit:contain; margin:8px auto 12px; }
+    .intro .brand-combined { width:270px; max-width:76vw; margin:8px auto 12px; }
+    .hero .brand-combined { width:250px; max-width:76vw; margin:8px auto 12px; }
+    @media (max-width:600px) {
+      .brand-combined, .hero .brand-combined, .intro .brand-combined { width:220px; max-width:72vw; margin:6px auto 10px; }
+    }
+
+</style>
 </head>
 <body>
   <!-- INTRO: replace the placeholder with a real clinic image/video later if desired. -->
-  <section class="intro" id="intro" aria-label="خوش‌آمدگویی">
+  <!-- اینترو فعلاً غیرفعال است؛ برای فعال‌کردنش در آینده، کلاس hidden را از تگ زیر حذف کن. -->
+  <section class="intro hidden" id="intro" aria-label="خوش‌آمدگویی">
     <div class="intro-panel">
       <div class="intro-content">
         <div class="intro-photo" id="introMedia">
@@ -155,8 +203,7 @@
           <!-- برای ویدئو: <video src="clinic-intro.mp4" autoplay muted playsinline></video> -->
           <span>تصویر یا ویدئوی فضای داخلی مطب<br>بعداً اینجا قرار می‌گیرد</span>
         </div>
-        <div class="brand-logo" aria-label="لوگوی Nova Clinic"><img class="logo-img" src="logo-icon.png" alt="لوگوی Nova Clinic"></div>
-        <img class="brand-en" src="nova-wordmark.png" alt="NOVA">
+        <img class="brand-combined" src="nova-logo.png" alt="لوگوی Nova Clinic و نوشته NOVA">
         
         <h1>به Nova Clinic خوش آمدید</h1>
         <p class="subtitle">سلامتی شما، اولویت ماست.</p>
@@ -169,22 +216,31 @@
   </section>
 
   <main>
-    <div class="topbar"><button class="menu-btn" type="button" aria-label="رفتن به بالای صفحه" onclick="window.scrollTo({top:0,behavior:'smooth'})">☰</button></div>
     <header class="hero">
-      <div class="brand-logo" aria-label="لوگوی Nova Clinic"><img class="logo-img" src="logo-icon.png" alt="لوگوی Nova Clinic"></div>
-      <img class="brand-en" src="nova-wordmark.png" alt="NOVA">
+      <img class="brand-combined" src="nova-logo.png" alt="لوگوی Nova Clinic و نوشته NOVA">
       
-      <h2 id="clinicName">کلینیک نوا</h2>
+      <h2 id="clinicName">کلینیک نــــوا</h2>  
       <p class="doctor" id="doctorName">نام پزشک</p>
       <p class="specialty" id="doctorSpecialty">تخصص پزشک</p>
       <p class="description-short" id="shortDescription">ارائه خدمات حرفه‌ای با رویکردی دقیق، آرام و متناسب با نیاز هر مراجعه‌کننده.</p>
     </header>
 
-    <nav class="quick-actions" aria-label="راه‌های ارتباطی سریع">
-      <a class="quick-action" id="quickCall" href="tel:+980000000000"><span class="action-icon">☎</span><span>تماس</span></a>
-      <a class="quick-action" id="quickWhatsApp" href="#" target="_blank" rel="noopener"><span class="action-icon" style="background:#25b978">◉</span><span>واتساپ</span></a>
-      <a class="quick-action" id="quickInstagram" href="#" target="_blank" rel="noopener"><span class="action-icon" style="background:#d94b9b">◎</span><span>اینستاگرام</span></a>
-      <a class="quick-action" id="quickMap" href="#" target="_blank" rel="noopener"><span class="action-icon">⌖</span><span>مسیریابی</span></a>
+    <nav class="quick-actions" aria-label="دسترسی سریع">
+      <a class="quick-action" id="quickBooking" href="#" target="_blank" rel="noopener">
+        <span class="action-icon">▣</span><span>رزرو آنلاین</span>
+      </a>
+      <a class="quick-action" href="#addressSection">
+        <span class="action-icon">⌖</span><span>آدرس کلینیک</span>
+      </a>
+      <a class="quick-action" href="#contactSection">
+        <span class="action-icon" style="background:#25b978">✉</span><span>راه‌های ارتباطی</span>
+      </a>
+      <a class="quick-action" href="#bankSection">
+        <span class="action-icon">▤</span><span>اطلاعات بانکی </span>
+      </a>
+      <a class="quick-action" href="#moreSection">
+        <span class="action-icon" style="background:#7c83df">＋</span><span>بیشتر</span>
+      </a>
     </nav>
 
     <section class="section">
@@ -196,7 +252,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="contactSection">
       <h3 class="section-title"><span class="emoji">☎</span> راه‌های تماس</h3>
       <div class="phone-grid">
         <div class="phone-card">
@@ -218,36 +274,136 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="addressSection">
       <h3 class="section-title"><span class="emoji">⌖</span> آدرس کلینیک</h3>
       <p class="address-text" id="addressText">آدرس کلینیک اینجا قرار می‌گیرد.</p>
-      <a class="outline-link" id="addressMapLink" href="#" target="_blank" rel="noopener">مشاهده روی نقشه ←</a>
+      <a class="primary-btn booking map-button" id="addressMapLink" href="#" target="_blank" rel="noopener">مسیریابی با نقشه　⌖</a>
     </section>
 
-    <a class="primary-btn booking" id="bookingLink" href="#" target="_blank" rel="noopener">رزرو نوبت آنلاین　▣</a>
-
-    <div class="socials" aria-label="شبکه‌های اجتماعی">
-      <a class="social-btn" id="instagramLink" href="#" target="_blank" rel="noopener" aria-label="اینستاگرام">◎</a>
-      <a class="social-btn" id="telegramLink" href="#" target="_blank" rel="noopener" aria-label="تلگرام">➤</a>
-      <a class="social-btn" id="whatsappLink" href="#" target="_blank" rel="noopener" aria-label="واتساپ">◉</a>
-      <a class="social-btn" id="websiteLink" href="#" target="_blank" rel="noopener" aria-label="وب‌سایت">⌘</a>
-      <a class="social-btn" id="otherSocialLink" href="#" target="_blank" rel="noopener" aria-label="شبکه اجتماعی دیگر">＋</a>
-    </div>
-
-    <section class="section">
-      <h3 class="section-title"><span class="emoji">✦</span> درباره کلینیک نوا</h3>
-      <p class="long-description" id="longDescription">توضیحات کامل درباره کلینیک، خدمات، تخصص‌ها و رویکرد مجموعه در این بخش قرار می‌گیرد. این متن نمونه است و بعداً می‌توان آن را با متن دلخواه شما جایگزین کرد.</p>
-    </section>
-
-    <section class="section">
-      <h3 class="section-title"><span class="emoji">▤</span> شماره کارت بانکی</h3>
-      <div class="bank-card">
-        <div class="bank-number" id="bankDisplay">0000 0000 0000 0000</div>
-        <button class="small-btn copy-btn" type="button" data-copy="bank">کپی شماره کارت</button>
+    <section class="section" id="socialSection">
+      <h3 class="section-title"><span class="emoji">✉</span> راه‌های ارتباطی در فضای مجازی</h3>
+      <div class="social-list">
+        <div class="social-row">
+          <span class="social-name"><span class="social-icon instagram" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.8" r="1.2" fill="currentColor"/></svg></span>اینستاگرام</span>
+          <a class="small-btn" id="instagramLink" href="#" target="_blank" rel="noopener">ورود به اینستاگرام ←</a>
+        </div>
+        <div class="social-row">
+          <span class="social-name"><span class="social-icon telegram" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 4.2 18.4 20c-.24 1.12-.9 1.4-1.82.88l-5.04-3.72-2.43 2.34c-.27.27-.5.5-1.02.5l.36-5.12 9.32-8.42c.4-.36-.09-.56-.62-.2L5.64 13.5.68 11.95c-1.08-.34-1.1-1.08.23-1.6L20.3 2.8c.9-.33 1.69.22 1.3 1.4Z"/></svg></span>تلگرام</span>
+          <a class="small-btn" id="telegramLink" href="#" target="_blank" rel="noopener">ورود به تلگرام ←</a>
+        </div>
+        <div class="social-row">
+          <span class="social-name"><span class="social-icon whatsapp" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 11.8a8.2 8.2 0 0 1-12.1 7.1L3 20l1.2-4.8a8.2 8.2 0 1 1 16-3.4Z"/><path d="M8.5 8.1c.3-.6.6-.6 1-.6h.4c.2 0 .4.1.5.5l.7 1.7c.1.3.1.5-.1.7l-.6.7c-.2.2-.2.4 0 .7.5.8 1.2 1.5 2.1 1.9.3.1.5.1.7-.1l.8-1c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .4-.2 1.2-.7 1.6-.5.5-1.2.7-2 .5-1-.2-2.3-.8-3.7-2-1.2-1.1-2-2.5-2.2-3.4-.2-.8.1-1.5.5-2.1Z"/></svg></span>واتساپ</span>
+          <a class="small-btn" id="whatsappLink" href="#" target="_blank" rel="noopener">ارسال پیام ←</a>
+        </div>
+        <div class="social-row">
+          <span class="social-name"><span class="social-icon website" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3.5 12h17M12 3c2.5 2.5 3.4 5.5 3.4 9s-.9 6.5-3.4 9c-2.5-2.5-3.4-5.5-3.4-9S9.5 5.5 12 3Z"/></svg></span>وب‌سایت</span>
+          <a class="small-btn" id="websiteLink" href="#" target="_blank" rel="noopener">ورود به سایت ←</a>
+        </div>
+        <div class="social-row">
+          <span class="social-name"><span class="social-icon other" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>سایر شبکه‌ها</span>
+          <a class="small-btn" id="otherSocialLink" href="#" target="_blank" rel="noopener">مشاهده ←</a>
+        </div>
       </div>
-      <p class="phone-label" style="margin:10px 0 0">این بخش اختیاری است؛ اگر نیازی ندارید، می‌توان آن را حذف کرد.</p>
     </section>
 
+
+
+    <section class="section" id="bankSection">
+      <h3 class="section-title"><span class="emoji">▤</span> اطلاعات بانکی</h3>
+      <div class="bank-list">
+        <div class="bank-item">
+          <div class="bank-label">کارت ملت </div>
+          <div class="bank-entry">
+            <div class="bank-field-label">اطلاعات بانیک</div>
+            <div class="bank-card">
+              <div class="bank-number" id="bankCardADisplay">0000 0000 0000 0000</div>
+              <button class="small-btn copy-btn" type="button" data-copy="bankCardA">کپی شماره کارت</button>
+            </div>
+          </div>
+          <div class="bank-entry">
+            <div class="bank-field-label">شماره شبا</div>
+            <div class="bank-card">
+              <div class="bank-number" id="bankShebaADisplay">IR00 0000 0000 0000 0000 0000 00</div>
+              <button class="small-btn copy-btn" type="button" data-copy="bankShebaA">کپی شماره شبا</button>
+            </div>
+          </div>
+        </div>
+        <div class="bank-item">
+          <div class="bank-label">کارت سامان </div>
+          <div class="bank-entry">
+            <div class="bank-field-label">شماره کارت</div>
+            <div class="bank-card">
+              <div class="bank-number" id="bankCardBDisplay">0000 0000 0000 0000</div>
+              <button class="small-btn copy-btn" type="button" data-copy="bankCardB">کپی شماره کارت</button>
+            </div>
+          </div>
+          <div class="bank-entry">
+            <div class="bank-field-label">شماره شبا</div>
+            <div class="bank-card">
+              <div class="bank-number" id="bankShebaBDisplay">IR00 0000 0000 0000 0000 0000 00</div>
+              <button class="small-btn copy-btn" type="button" data-copy="bankShebaB">کپی شماره شبا</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="phone-label" style="margin:10px 0 0"></p>
+    </section>
+    <section class="section services-section" id="moreSection">
+      <h3 class="section-title"><span class="emoji">✦</span> درباره کلینیک نوا و خدمات</h3>
+
+      <div class="service-group">
+        <h4>خدمات تغذیه و رژیم‌درمانی</h4>
+        <ul>
+          <li>ارائه رژیم‌های تخصصی کاهش و افزایش وزن</li>
+          <li>رژیم‌درمانی با هدف کمک به کنترل بیماری‌های دیابت، فشارخون، بیماری‌های قلبی، سرطان، بیماری‌های کلیوی و کبدی</li>
+          <li>رژیم‌درمانی ویژه بیماران تحت دیالیز</li>
+          <li>رژیم‌درمانی در سندرم تخمدان پلی‌کیستیک (PCOS)، بیماری‌های التهابی روده (IBD) و سندرم روده تحریک‌پذیر (IBS)</li>
+        </ul>
+      </div>
+
+      <div class="service-group">
+        <h4>تغذیه تخصصی</h4>
+        <ul>
+          <li>رژیم غذایی تخصصی ورزشکاران</li>
+          <li>مشاوره تغذیه دوران بارداری</li>
+          <li>تغذیه تکمیلی کودکان به روش BLW</li>
+        </ul>
+      </div>
+
+      <div class="service-group">
+        <h4>خدمات لاغری و تناسب اندام</h4>
+        <p>کلینیک نوا با بهره‌گیری از دستگاه‌های پیشرفته در زمینه خدمات زیبایی و فرم‌دهی بدن فعالیت می‌کند؛ از جمله:</p>
+        <ul>
+          <li>آر‌اف (RF)</li>
+          <li>کویتیشن (Cavitation)</li>
+          <li>کرایولیپولیز (Cryolipolysis)</li>
+          <li>EMF</li>
+        </ul>
+      </div>
+
+      <div class="service-group">
+        <h4>خدمات زیبایی و فرم‌دهی بدن</h4>
+        <ul>
+          <li>کمک به کاهش چربی‌های موضعی مقاوم</li>
+          <li>خدمات مربوط به نواحی شکم، پهلو، دکلته، خط سوتین، غبغب، ران و بازو</li>
+          <li>خدمات لیفت و سفت‌سازی پوست صورت و کمک به بهبود افتادگی پوست شکم</li>
+          <li>کمک به بهبود ظاهر چین‌وچروک صورت و خطوط لبخند و پیشانی</li>
+        </ul>
+      </div>
+
+      <div class="service-group">
+        <h4>تقویت عضلات</h4>
+        <ul>
+          <li>کمک به تقویت عضلات آسیب‌دیده</li>
+          <li>کمک به افزایش توان عضلانی ورزشکاران</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section doctor-resume-section" id="doctorResumeSection">
+      <h3 class="section-title"><span class="emoji">▤</span> رزومه دکتر</h3>
+      <!-- رزومه و سوابق پزشک را بعداً در این بخش اضافه کن. -->
+    </section>
     <footer class="footer">NOVA CLINIC · Better Health, Brighter Tomorrow</footer>
   </main>
 
@@ -261,28 +417,30 @@
       بعد از هر تغییر، همین فایل index.html را در GitHub ویرایش و ذخیره کن.
     */
     const CONFIG = {
-      clinicName: "کلینیک نوا",
-      doctorName: "نام پزشک",
-      doctorSpecialty: "تخصص پزشک",
-      shortDescription: "ارائه خدمات حرفه‌ای با رویکردی دقیق، آرام و متناسب با نیاز هر مراجعه‌کننده.",
-      mobile: "09120000000",
+      clinicName: "کلینیک نُـــوا",
+      doctorName: "فاطمه بهرسی",
+      doctorSpecialty: "کارشناس ارشد تغذیه و رژیم درمانی ",
+      shortDescription: "از رژیم‌درمانی تخصصی تا فرم‌دهی بدن و جوان‌سازی پوست؛ همراه شما در مسیر سلامتی و زیبایی",
+      mobile: "09173535828",
       mobileTel: "+989120000000",
-      office: "02100000000",
+      office: "07733122234",
       officeTel: "+982100000000",
-      address: "آدرس کلینیک اینجا قرار می‌گیرد.",
-      mapUrl: "",
-      bookingUrl: "",
-      instagramUrl: "",
+      address: "آدرس: گناوه، روبرو بهداری ساختمان پزشکان نیکان مهر طبقه چهارم واحد 41 کلینیک لاغری نُـــوا",
+      mapUrl: "https://maps.app.goo.gl/Pg21bs6jyonrSWAZA",
+      bookingUrl: "https://doctoreto.com/doctor/qyWWgY",
+      instagramUrl: "https://www.instagram.com/dt.behrasi/?utm_source=qr&r=nametag",
       whatsappUrl: "",
       telegramUrl: "",
       websiteUrl: "",
       otherSocialUrl: "",
-      bankCard: "0000000000000000",
-      longDescription: "توضیحات کامل درباره کلینیک، خدمات، تخصص‌ها و رویکرد مجموعه در این بخش قرار می‌گیرد. این متن نمونه است و بعداً می‌توان آن را با متن دلخواه شما جایگزین کرد.",
+      bankCardA: "6104337854226477",
+      bankShebaA: "",
+      bankCardB: "",
+      bankShebaB: "",
       hours: [
-        ["شنبه تا چهارشنبه", "۹:۰۰ تا ۱۸:۰۰"],
-        ["پنجشنبه", "۹:۰۰ تا ۱۴:۰۰"],
-        ["جمعه", "تعطیل"]
+       ["شنبه، یکشنبه، سه‌شنبه و چهارشنبه", "15:30 تا 20:00"],
+       ["دوشنبه و پنجشنبه", "10:00 تا 13:00"],
+       ["جمعه", "تعطیل"]
       ]
     };
 
@@ -290,10 +448,21 @@
     const setText = (id, value) => { if (value !== undefined && value !== null) $(id).textContent = value; };
     const setLink = (id, url) => {
       const el = $(id);
-      if (url && url.trim()) { el.href = url; el.style.display = ""; }
-      else { el.style.display = "none"; }
+      const row = el.closest(".social-row");
+      if (url && url.trim()) {
+        el.href = url;
+        el.style.display = "";
+        if (row) row.style.display = "";
+      } else {
+        el.style.display = "none";
+        if (row) row.style.display = "none";
+      }
     };
     const formatDigits = (value) => (value || "").replace(/\D/g, "");
+    const formatSheba = (value) => {
+      const cleaned = (value || "").replace(/\s+/g, "").toUpperCase();
+      return cleaned ? cleaned.replace(/(.{4})/g, "$1 ").trim() : "";
+    };
     function applyConfig() {
       setText("clinicName", CONFIG.clinicName);
       setText("doctorName", CONFIG.doctorName);
@@ -302,17 +471,23 @@
       setText("mobileDisplay", CONFIG.mobile);
       setText("officeDisplay", CONFIG.office);
       setText("addressText", CONFIG.address);
-      setText("longDescription", CONFIG.longDescription);
-      setText("bankDisplay", (CONFIG.bankCard || "").replace(/(\d{4})(?=\d)/g, "$1 ").trim());
+      setText("bankCardADisplay", (CONFIG.bankCardA || "").replace(/(\d{4})(?=\d)/g, "$1 ").trim() || "6104337854226477");
+      setText("bankShebaADisplay", formatSheba(CONFIG.bankShebaA) || "590120010000005585648524");
+      setText("bankCardBDisplay", (CONFIG.bankCardB || "").replace(/(\d{4})(?=\d)/g, "$1 ").trim() || "6219861917104514");
+      setText("bankShebaBDisplay", formatSheba(CONFIG.bankShebaB) || "760560611828005270145501");
 
       $("mobileCall").href = "tel:" + (CONFIG.mobileTel || formatDigits(CONFIG.mobile));
       $("officeCall").href = "tel:" + (CONFIG.officeTel || formatDigits(CONFIG.office));
-      $("quickCall").href = "tel:" + (CONFIG.mobileTel || formatDigits(CONFIG.mobile));
-      setLink("quickWhatsApp", CONFIG.whatsappUrl);
-      setLink("quickInstagram", CONFIG.instagramUrl);
-      setLink("quickMap", CONFIG.mapUrl);
       setLink("addressMapLink", CONFIG.mapUrl);
-      setLink("bookingLink", CONFIG.bookingUrl);
+      if (CONFIG.bookingUrl && CONFIG.bookingUrl.trim()) {
+        $("quickBooking").href = CONFIG.bookingUrl;
+      } else {
+        $("quickBooking").href = "#";
+        $("quickBooking").addEventListener("click", (event) => {
+          event.preventDefault();
+          showToast("آدرس سایت رزرو آنلاین هنوز تنظیم نشده است");
+        });
+      }
       setLink("instagramLink", CONFIG.instagramUrl);
       setLink("telegramLink", CONFIG.telegramUrl);
       setLink("whatsappLink", CONFIG.whatsappUrl);
@@ -337,13 +512,11 @@
     const intro = $("intro");
     function closeIntro() {
       intro.classList.add("hidden");
+      intro.setAttribute("aria-hidden", "true");
       try { sessionStorage.setItem("novaIntroSeen", "1"); } catch(e) {}
     }
-    $("enterBtn").addEventListener("click", closeIntro);
-    $("skipBtn").addEventListener("click", closeIntro);
-    try {
-      if (sessionStorage.getItem("novaIntroSeen") === "1") intro.classList.add("hidden");
-    } catch(e) {}
+    $("enterBtn")?.addEventListener("click", closeIntro);
+    $("skipBtn")?.addEventListener("click", closeIntro);
 
     async function copyText(value) {
       try {
@@ -375,7 +548,13 @@
     document.querySelectorAll("[data-copy]").forEach(button => {
       button.addEventListener("click", () => {
         const key = button.dataset.copy;
-        const value = key === "bank" ? formatDigits(CONFIG.bankCard) :
+        const copyValues = {
+          bankCardA: formatDigits(CONFIG.bankCardA),
+          bankShebaA: (CONFIG.bankShebaA || "").replace(/\s+/g, "").toUpperCase(),
+          bankCardB: formatDigits(CONFIG.bankCardB),
+          bankShebaB: (CONFIG.bankShebaB || "").replace(/\s+/g, "").toUpperCase()
+        };
+        const value = Object.prototype.hasOwnProperty.call(copyValues, key) ? copyValues[key] :
                       key === "mobile" ? (CONFIG.mobile || "") :
                       (CONFIG.office || "");
         copyText(value);
