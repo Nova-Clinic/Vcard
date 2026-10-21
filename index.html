@@ -59,6 +59,7 @@
       background: linear-gradient(135deg, #d5efff, #f9fdff 55%, #b9e1fb);
       border: 1px solid #c6e6fb; overflow: hidden;
     }
+    .intro-photo img { display:block; width:100%; height:100%; object-fit:cover; border-radius:inherit; }
     .intro-photo img, .intro-photo video { width:100%; height:100%; object-fit:cover; }
     .brand-logo {
       width: 150px; height: 128px; display: grid; place-items:center;
@@ -200,9 +201,7 @@
     <div class="intro-panel">
       <div class="intro-content">
         <div class="intro-photo" id="introMedia">
-          <!-- برای عکس: <img src="clinic-interior.jpg" alt="فضای داخلی کلینیک"> -->
-          <!-- برای ویدئو: <video src="clinic-intro.mp4" autoplay muted playsinline></video> -->
-          <span>تصویر یا ویدئوی فضای داخلی مطب<br>بعداً اینجا قرار می‌گیرد</span>
+          <img src="clinic-interior.jpg" alt="فضای داخلی کلینیک نوا" loading="eager" decoding="async">
         </div>
         <img class="brand-combined" src="nova-logo.png" alt="لوگوی Nova Clinic و نوشته NOVA">
         
@@ -436,7 +435,7 @@
       instagramUrl: "https://www.instagram.com/dt.behrasi/?utm_source=qr&r=nametag",
       whatsappUrl: "",
       telegramUrl: "",
-      baleUrl: "https://ble.ir/NovaClinicSlimingBeauty",
+      baleUrl: "",
       websiteUrl: "",
       otherSocialUrl: "",
       bankCardA: "6104337854226477",
