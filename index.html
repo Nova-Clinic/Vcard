@@ -118,6 +118,7 @@
     .social-icon svg { width:21px; height:21px; display:block; }
     .social-icon.instagram { color:#a84b87; background:#fff2f8; border-color:#f5ddeb; }
     .social-icon.telegram { color:#287fb4; background:#edf8ff; border-color:#d9effc; }
+    .social-icon.bale { color:#168b62; background:#edfaf4; border-color:#d7f1e5; }
     .social-icon.whatsapp { color:#27845b; background:#effaf4; border-color:#d9f0e3; }
     .social-icon.website { color:#287bb5; background:#eef7ff; border-color:#dceffc; }
     .social-icon.other { color:#6d72b6; background:#f3f3ff; border-color:#e4e4fb; }
@@ -236,7 +237,7 @@
         <span class="action-icon" style="background:#25b978">✉</span><span>راه‌های ارتباطی</span>
       </a>
       <a class="quick-action" href="#bankSection">
-        <span class="action-icon">▤</span><span>اطلاعات بانکی </span>
+        <span class="action-icon">▤</span><span>شماره کارت‌ها</span>
       </a>
       <a class="quick-action" href="#moreSection">
         <span class="action-icon" style="background:#7c83df">＋</span><span>بیشتر</span>
@@ -257,17 +258,17 @@
       <div class="phone-grid">
         <div class="phone-card">
           <div class="phone-label">شماره موبایل</div>
-          <div class="phone-number" id="mobileDisplay">09173535828</div>
+          <div class="phone-number" id="mobileDisplay">0912 000 0000</div>
           <div class="phone-buttons">
-            <a class="small-btn" id="mobileCall" href="09173535828">تماس</a>
+            <a class="small-btn" id="mobileCall" href="tel:+989120000000">تماس</a>
             <button class="small-btn" type="button" data-copy="mobile">کپی شماره</button>
           </div>
         </div>
         <div class="phone-card">
           <div class="phone-label">تلفن مطب</div>
-          <div class="phone-number" id="officeDisplay">07733122234</div>
+          <div class="phone-number" id="officeDisplay">021 0000 0000</div>
           <div class="phone-buttons">
-            <a class="small-btn" id="officeCall" href="07733122234">تماس</a>
+            <a class="small-btn" id="officeCall" href="tel:+982100000000">تماس</a>
             <button class="small-btn" type="button" data-copy="office">کپی شماره</button>
           </div>
         </div>
@@ -292,6 +293,10 @@
           <a class="small-btn" id="telegramLink" href="#" target="_blank" rel="noopener">ورود به تلگرام ←</a>
         </div>
         <div class="social-row">
+          <span class="social-name"><span class="social-icon bale" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H6l-2.5 2 .7-4.1A7.5 7.5 0 1 1 20 11.5Z"/><path d="M8 9.5h.01M12 9.5h.01M16 9.5h.01" stroke-width="3"/></svg></span>بله</span>
+          <a class="small-btn" id="baleLink" href="#" target="_blank" rel="noopener">ورود به بله ←</a>
+        </div>
+        <div class="social-row">
           <span class="social-name"><span class="social-icon whatsapp" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 11.8a8.2 8.2 0 0 1-12.1 7.1L3 20l1.2-4.8a8.2 8.2 0 1 1 16-3.4Z"/><path d="M8.5 8.1c.3-.6.6-.6 1-.6h.4c.2 0 .4.1.5.5l.7 1.7c.1.3.1.5-.1.7l-.6.7c-.2.2-.2.4 0 .7.5.8 1.2 1.5 2.1 1.9.3.1.5.1.7-.1l.8-1c.2-.2.4-.3.7-.2l1.7.8c.3.1.4.3.4.5 0 .4-.2 1.2-.7 1.6-.5.5-1.2.7-2 .5-1-.2-2.3-.8-3.7-2-1.2-1.1-2-2.5-2.2-3.4-.2-.8.1-1.5.5-2.1Z"/></svg></span>واتساپ</span>
           <a class="small-btn" id="whatsappLink" href="#" target="_blank" rel="noopener">ارسال پیام ←</a>
         </div>
@@ -314,7 +319,7 @@
         <div class="bank-item">
           <div class="bank-label">کارت ملت </div>
           <div class="bank-entry">
-            <div class="bank-field-label">اطلاعات بانیک</div>
+            <div class="bank-field-label">شماره کارت</div>
             <div class="bank-card">
               <div class="bank-number" id="bankCardADisplay">0000 0000 0000 0000</div>
               <button class="small-btn copy-btn" type="button" data-copy="bankCardA">کپی شماره کارت</button>
@@ -422,21 +427,22 @@
       doctorSpecialty: "کارشناس ارشد تغذیه و رژیم درمانی ",
       shortDescription: "از رژیم‌درمانی تخصصی تا فرم‌دهی بدن و جوان‌سازی پوست؛ همراه شما در مسیر سلامتی و زیبایی",
       mobile: "09173535828",
-      mobileTel: "09173535828",
+      mobileTel: "+989120000000",
       office: "07733122234",
-      officeTel: "07733122234",
+      officeTel: "+982100000000",
       address: "آدرس: گناوه، روبرو بهداری ساختمان پزشکان نیکان مهر طبقه چهارم واحد 41 کلینیک لاغری نُـــوا",
       mapUrl: "https://maps.app.goo.gl/Pg21bs6jyonrSWAZA",
       bookingUrl: "https://doctoreto.com/doctor/qyWWgY",
       instagramUrl: "https://www.instagram.com/dt.behrasi/?utm_source=qr&r=nametag",
       whatsappUrl: "",
       telegramUrl: "",
+      baleUrl: "",
       websiteUrl: "",
       otherSocialUrl: "",
       bankCardA: "6104337854226477",
-      bankShebaA: "590120010000005585648524",
-      bankCardB: "6219861917104514",
-      bankShebaB: "760560611828005270145501",
+      bankShebaA: "",
+      bankCardB: "",
+      bankShebaB: "",
       hours: [
        ["شنبه، یکشنبه، سه‌شنبه و چهارشنبه", "15:30 تا 20:00"],
        ["دوشنبه و پنجشنبه", "10:00 تا 13:00"],
@@ -490,6 +496,7 @@
       }
       setLink("instagramLink", CONFIG.instagramUrl);
       setLink("telegramLink", CONFIG.telegramUrl);
+      setLink("baleLink", CONFIG.baleUrl);
       setLink("whatsappLink", CONFIG.whatsappUrl);
       setLink("websiteLink", CONFIG.websiteUrl);
       setLink("otherSocialLink", CONFIG.otherSocialUrl);
