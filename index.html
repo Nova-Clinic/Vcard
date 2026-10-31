@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<link rel="stylesheet" href="./style.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>کلینیک نُــوا | Nova Clinic</title>
+<meta name="description" content="کلینیک نُــوا فضایی آرام و حرفه‌ای برای مراقبت از سلامت شماست؛ جایی که مشاوره دقیق، توجه به جزئیات و همراهی در تمام مسیر درمان در اولویت قرار دارد." />
+<meta name="theme-color" content="#0874cf" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+<!--$-->
+<div class="flex min-h-screen flex-col bg-canvas">
+  <a href="#main-content" class="sr-only rounded-2xl bg-white px-4 py-2 text-sm font-semibold text-brand focus:not-sr-only focus:absolute focus:right-4 focus:top-4 focus:z-[70]">رفتن به محتوای اصلی</a>
+    <header class="sticky top-0 z-50">
+      <div class="bg-navy text-[11px] text-sky/70">
+        <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-1 px-5 py-2 sm:px-8">
+          <span class="hidden items-center gap-2 sm:flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-3.5 w-3.5 text-mint" aria-hidden="true">
+              <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+              </path>
+              <path d="M20 3v4">
+              </path>
+              <path d="M22 5h-4">
+              </path>
+              <path d="M4 17v2">
+              </path>
+              <path d="M5 18H3">
+              </path>
+            </svg>{{site.tagline}}</span>
+            <span class="flex flex-1 items-center justify-between gap-2 sm:flex-none sm:justify-end sm:gap-5">
+              <span class="hidden text-sky/55 md:inline">[روزها و ساعات کاری]</span>
+                <a href="tel:+980000000000" class="inline-flex min-h-[28px] items-center gap-1.5 font-semibold text-white transition hover:text-mint">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-3.5 w-3.5" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>[شماره تلفن ثابت]</a>
+                </span>
+              </div>
+            </div>
+            <div class="glass-bar border-b border-hairline/80 transition-shadow duration-300 ">
+              <nav aria-label="ناوبری اصلی" class="relative mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 transition-all duration-300 sm:px-8 h-20">
+                <a aria-label="کلینیک نُــوا — صفحه اصلی" class="min-h-[44px] content-center active" href="#home" data-status="active" aria-current="page">
+                  <span class="flex items-center gap-3 ">
+                    <span class="grid h-11 w-11 shrink-0 place-items-center">
+                      <img
+                        data-src="{{brand.logo}}"
+                        alt="{{brand.latin}}"
+                        class="h-full w-full object-contain"
+                      />
+                   </span>
+                      <span class="leading-tight">  
+                        <strong class="block text-base font-bold tracking-[0.18em] text-brand-deep">{{brand.name}}</strong>
+                          <small class="block text-[10px] tracking-[0.22em] text-mist">{{brand.latin}}</small>
+                          </span>
+                        </span>
+                      </a>
+                      <div class="hidden items-center gap-1 lg:flex">
+                        <a href="#home" class="relative inline-flex min-h-[44px] items-center rounded-full px-3.5 text-[13px] font-medium transition-colors text-ink/65 hover:text-brand">خانه<span aria-hidden="true" class="absolute inset-x-3 bottom-1 h-[2px] origin-right rounded-full bg-mint transition-transform duration-300 scale-x-0">
+                        </span>
+                      </a>
+                      <a href="#services" class="relative inline-flex min-h-[44px] items-center rounded-full px-3.5 text-[13px] font-medium transition-colors text-ink/65 hover:text-brand">خدمات<span aria-hidden="true" class="absolute inset-x-3 bottom-1 h-[2px] origin-right rounded-full bg-mint transition-transform duration-300 scale-x-0">
+                      </span>
+                    </a>
+                    <a href="#doctor" class="relative inline-flex min-h-[44px] items-center rounded-full px-3.5 text-[13px] font-medium transition-colors text-ink/65 hover:text-brand">پزشک<span aria-hidden="true" class="absolute inset-x-3 bottom-1 h-[2px] origin-right rounded-full bg-mint transition-transform duration-300 scale-x-0">
+                    </span>
+                  </a>
+                  <a href="#articles" class="relative inline-flex min-h-[44px] items-center rounded-full px-3.5 text-[13px] font-medium transition-colors text-ink/65 hover:text-brand">مقالات<span aria-hidden="true" class="absolute inset-x-3 bottom-1 h-[2px] origin-right rounded-full bg-mint transition-transform duration-300 scale-x-0">
+                  </span>
+                </a>
+                <a href="#gallery" class="relative inline-flex min-h-[44px] items-center rounded-full px-3.5 text-[13px] font-medium transition-colors text-ink/65 hover:text-brand">گالری<span aria-hidden="true" class="absolute inset-x-3 bottom-1 h-[2px] origin-right rounded-full bg-mint transition-transform duration-300 scale-x-0">
+                </span>
+              </a>
+              <a href="#contact" class="relative inline-flex min-h-[44px] items-center rounded-full px-3.5 text-[13px] font-medium transition-colors text-ink/65 hover:text-brand">اطلاعات کلینیک<span aria-hidden="true" class="absolute inset-x-3 bottom-1 h-[2px] origin-right rounded-full bg-mint transition-transform duration-300 scale-x-0">
+              </span>
+            </a>
+          </div>
+          <div class="flex items-center gap-2">
+            <a href="tel:+980000000000" class="hidden min-h-[44px] items-center gap-2 rounded-full bg-gradient-to-l from-brand to-brand-deep px-5 text-[13px] font-semibold text-white shadow-[0_10px_24px_rgba(8,116,207,0.24)] transition hover:-translate-y-0.5 sm:inline-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>تماس با ما</a>
+              <button type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="باز کردن منو" class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-hairline bg-white text-brand-deep transition hover:border-brand/40 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-5 w-5">
+                  <line x1="4" x2="20" y1="12" y2="12">
+                  </line>
+                  <line x1="4" x2="20" y1="6" y2="6">
+                  </line>
+                  <line x1="4" x2="20" y1="18" y2="18">
+                  </line>
+                </svg>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main id="main-content" class="flex-1">
+        <section id="home" class="relative overflow-hidden bg-gradient-to-b from-sky/70 via-canvas to-canvas">
+          <div aria-hidden="true" class="pointer-events-none absolute inset-0 overflow-hidden">
+            <div class="animate-orbit absolute -left-44 -top-52 h-[26rem] w-[26rem] rounded-full border border-brand/10 shadow-[0_0_0_40px_rgba(140,201,245,0.12),0_0_0_80px_rgba(140,201,245,0.06)]">
+            </div>
+            <div class="animate-float absolute right-[18%] top-24 h-2 w-2 rounded-full bg-mint/70">
+            </div>
+            <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-canvas to-transparent">
+            </div>
+          </div>
+          <div class="relative mx-auto grid max-w-6xl items-center gap-16 px-5 pb-24 pt-12 sm:px-8 lg:grid-cols-[1.02fr_0.98fr] lg:gap-12 lg:pb-28 lg:pt-16">
+            <div class="animate-enter">
+              <span class="inline-flex items-center gap-2 rounded-full border border-brand/15 bg-white/85 px-4 py-1.5 text-[11.5px] font-semibold text-brand shadow-[0_6px_18px_rgba(13,87,144,0.06)] backdrop-blur">
+                <span class="h-1.5 w-1.5 rounded-full bg-mint ring-4 ring-mint/15" aria-hidden="true">
+                </span>{{hero.badge}}</span>
+                <h1 class="mt-6 text-[2.35rem] font-extrabold leading-[1.4] tracking-tight text-brand-deep sm:text-5xl lg:text-[3.35rem]">کلینیک <span class="text-brand">{{brand.name}}</span>
+                  <span class="mt-3 block text-base font-medium leading-9 text-mist sm:text-lg">{{hero.subtitle}}</span>
+                  </h1>
+                  <p class="mt-5 max-w-xl text-[14.5px] leading-9 text-mist">کلینیک نُــوا فضایی آرام و حرفه‌ای برای مراقبت از سلامت شماست؛ جایی که مشاوره دقیق، توجه به جزئیات و همراهی در تمام مسیر درمان در اولویت قرار دارد.</p>
+                    <div class="mt-8 flex flex-wrap gap-3">
+                      <a class="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 bg-gradient-to-l from-brand to-brand-deep text-white shadow-[0_10px_26px_rgba(8,116,207,0.26)] hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(8,116,207,0.32)] " href="tel:+980000000000">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4" aria-hidden="true">
+                          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                          </path>
+                        </svg>تماس با کلینیک</a>
+                        <a class="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 border border-brand/25 bg-white/80 text-brand-deep hover:-translate-y-0.5 hover:border-brand/60 hover:bg-white " href="#services">مشاهده خدمات<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left h-4 w-4" aria-hidden="true">
+                          <path d="m12 19-7-7 7-7">
+                          </path>
+                          <path d="M19 12H5">
+                          </path>
+                        </svg>
+                      </a>
+                    </div>
+                    <ul class="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-[12px] text-ink/70" data-list="hero.features"></ul>
+                        </div>
+                        <div class="animate-enter relative mx-auto w-full max-w-md [animation-delay:180ms] lg:max-w-none">
+                          <div class="relative aspect-[4/3.2] overflow-hidden rounded-[2.5rem] border border-white/80 bg-sky shadow-lift sm:aspect-[4/3] lg:aspect-[4/4.05]">
+                            <span >
+                              <img
+                               data-src="{{hero.image}}"
+                                alt="{{hero.imageAlt}}"
+                                class="absolute inset-0 h-full w-full object-cover"
+                              />            
+                            </span>
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-deep/35 via-brand-deep/0 to-white/15">
+                            </div>
+                            <span class="absolute bottom-4 right-5 flex items-center gap-1.5 text-[11px] font-medium text-white/90">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-3.5 w-3.5 text-mint" aria-hidden="true">
+                                <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+                                </path>
+                                <path d="M20 3v4">
+                                </path>
+                                <path d="M22 5h-4">
+                                </path>
+                                <path d="M4 17v2">
+                                </path>
+                                <path d="M5 18H3">
+                                </path>
+                              </svg>{{hero.imageCaption}}</span>
+                            </div>
+                            <div class="glass-panel absolute -bottom-10 right-0 w-[88%] max-w-[21rem] rounded-3xl border border-white/80 p-5 shadow-soft sm:right-4">
+                              <div class="flex items-center gap-2 text-[11px] font-semibold text-brand">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-3.5 w-3.5 text-mint" aria-hidden="true">
+                                  <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+                                  </path>
+                                  <path d="M20 3v4">
+                                  </path>
+                                  <path d="M22 5h-4">
+                                  </path>
+                                  <path d="M4 17v2">
+                                  </path>
+                                  <path d="M5 18H3">
+                                  </path>
+                                </svg>{{hero.panelTitle}}</div>
+                                <div class="mt-3 grid grid-cols-3 divide-x divide-x-reverse divide-hairline text-center" data-list="hero.stats"></div>
+                                            <p class="mt-3 border-t border-white/70 pt-3 text-[11px] leading-6 text-mist">{{hero.panelText}}</p>
+                                            </div>
+                                            <div class="animate-float-slow absolute -top-4 left-1 hidden rounded-2xl border border-hairline bg-white/95 px-4 py-3 text-[11px] shadow-soft backdrop-blur sm:block">
+                                              <span class="flex items-center gap-1.5 font-semibold text-brand-deep">
+                                                <span class="h-1.5 w-1.5 rounded-full bg-mint" aria-hidden="true">
+                                                </span>{{hero.floatTitle}}</span>
+                                                <span class="mt-1 block text-mist">{{hero.floatText}}</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </section>
+                                          <div class="border-y border-hairline bg-white">
+                                            <div class="mx-auto grid max-w-6xl grid-cols-2 gap-x-4 gap-y-6 px-5 py-6 sm:px-8 lg:grid-cols-4" data-list="trust"></div>
+                                                          </div>
+                                                          <section id="services" class="scroll-mt-28 bg-white py-20 sm:py-24">
+                                                            <div class="mx-auto max-w-6xl px-5 sm:px-8">
+                                                              <div class="reveal ">
+                                                                <div class="flex flex-wrap items-end justify-between gap-5 ">
+                                                                  <div class="max-w-xl">
+                                                                    <span class="inline-flex items-center gap-2 text-xs font-semibold text-mint">
+                                                                      <span class="h-px w-6 bg-mint/60" aria-hidden="true">
+                                                                      </span>{{servicesSection.eyebrow}}</span>
+                                                                      <h2 class="mt-2 text-[1.6rem] font-bold text-brand-deep sm:text-[1.9rem]">{{servicesSection.title}}</h2>
+                                                                        <p class="mt-2 text-[13px] leading-7 text-mist">{{servicesSection.text}}</p>
+                                                                        </div>
+                                                                        <a href="#contact" class="inline-flex min-h-[44px] items-center gap-2 whitespace-nowrap text-[12.5px] font-semibold text-brand transition hover:text-brand-deep">راه‌های ارتباطی<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left h-4 w-4" aria-hidden="true">
+                                                                          <path d="m12 19-7-7 7-7">
+                                                                          </path>
+                                                                          <path d="M19 12H5">
+                                                                          </path>
+                                                                        </svg>
+                                                                      </a>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5" data-list="services"></div>
+                                                                          </div>
+                                                                        </section>
+                                                                        <section id="doctor" class="scroll-mt-28 bg-canvas py-20 sm:py-24">
+                                                                          <div class="mx-auto grid max-w-6xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[0.92fr_1.08fr] lg:gap-14">
+                                                                            <div class="reveal relative">
+                                                                              <div class="relative aspect-[4/4.4] overflow-hidden rounded-[2.5rem] border border-white bg-sky shadow-soft sm:aspect-[4/4.2]">
+                                                                                <span data-img="doctor.image"></span>
+                                                                                <div class="absolute inset-0 bg-gradient-to-t from-brand-deep/25 to-transparent">
+                                                                                </div>
+                                                                              </div>
+                                                                              <div class="glass-panel absolute inset-x-4 bottom-4 rounded-2xl border border-white/70 px-4 py-3 text-center text-[11.5px] font-medium text-brand-deep shadow-soft">[تخصص و عنُــوان حرفه‌ای]</div>
+                                                                              </div>
+                                                                              <div class="reveal " style="transition-delay:120ms">
+                                                                                <span class="inline-flex items-center gap-2 text-xs font-semibold text-mint">
+                                                                                  <span class="h-px w-6 bg-mint/60" aria-hidden="true">
+                                                                                  </span>{{doctor.eyebrow}}</span>
+                                                                                  <h2 class="mt-2 text-[1.7rem] font-bold text-brand-deep sm:text-[2rem]">[نام و نام خانُــوادگی پزشک]</h2>
+                                                                                    <p class="mt-2 text-[13px] font-medium text-brand">[تخصص و عنُــوان حرفه‌ای]</p>
+                                                                                      <p class="mt-4 max-w-xl text-[13px] leading-8 text-mist">{{doctor.bio}}</p>
+                                                                                        <ul class="mt-5 grid gap-2.5 text-[12.5px] text-ink/80" data-list="doctor.credentials"></ul>
+                                                                                              <div class="mt-7 flex items-end gap-8" data-list="doctor.stats"></div>
+                                                                                                          <div class="mt-8 flex flex-wrap gap-3">
+                                                                                                            <a class="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 bg-gradient-to-l from-brand to-brand-deep text-white shadow-[0_10px_26px_rgba(8,116,207,0.26)] hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(8,116,207,0.32)] " href="/doctors/nova-doctor">
+                                                                                                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap h-4 w-4" aria-hidden="true">
+                                                                                                                <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                                                                                                                </path>
+                                                                                                                <path d="M22 10v6">
+                                                                                                                </path>
+                                                                                                                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5">
+                                                                                                                </path>
+                                                                                                              </svg>پروفایل کامل پزشک</a>
+                                                                                                              <a class="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 border border-brand/25 bg-white/80 text-brand-deep hover:-translate-y-0.5 hover:border-brand/60 hover:bg-white gap-2 active" href="#contact" data-status="active" aria-current="page">راه‌های ارتباطی<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left h-4 w-4" aria-hidden="true">
+                                                                                                                <path d="m12 19-7-7 7-7">
+                                                                                                                </path>
+                                                                                                                <path d="M19 12H5">
+                                                                                                                </path>
+                                                                                                              </svg>
+                                                                                                            </a>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </section>
+                                                                                                    <section class="bg-white py-4 sm:py-8">
+                                                                                                      <div class="mx-auto max-w-6xl px-5 sm:px-8">
+                                                                                                        <div class="reveal relative overflow-hidden rounded-[2rem] bg-gradient-to-l from-brand-deep via-brand to-[#0784d7] px-7 py-9 text-white shadow-lift sm:px-12 sm:py-11">
+                                                                                                          <span aria-hidden="true" class="pointer-events-none absolute -left-6 -top-16 select-none text-[13rem] leading-none text-white/5">✚</span>
+                                                                                                            <div class="relative flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
+                                                                                                              <div>
+                                                                                                                <h2 class="text-[1.5rem] font-bold sm:text-[1.75rem]">{{cta.title}}</h2>
+                                                                                                                  <p class="mt-2 max-w-md text-[12.5px] leading-7 text-sky/85">{{cta.text}}</p>
+                                                                                                                  </div>
+                                                                                                                  <a class="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-mint focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 bg-white text-brand-deep shadow-soft hover:-translate-y-0.5 hover:bg-sky shrink-0" href="tel:+980000000000">
+                                                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-4 w-4" aria-hidden="true">
+                                                                                                                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                                                                                                      </path>
+                                                                                                                    </svg>تماس با کلینیک</a>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </section>
+                                                                                                            <section class="bg-canvas py-20 sm:py-24">
+                                                                                                              <div class="mx-auto grid max-w-6xl gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-10">
+                                                                                                                <div id="gallery" class="scroll-mt-28">
+                                                                                                                  <div>
+                                                                                                                    <div class="flex flex-wrap items-end justify-between gap-5 ">
+                                                                                                                      <div class="max-w-xl">
+                                                                                                                        <span class="inline-flex items-center gap-2 text-xs font-semibold text-mint">
+                                                                                                                          <span class="h-px w-6 bg-mint/60" aria-hidden="true">
+                                                                                                                          </span>{{gallerySection.eyebrow}}</span>
+                                                                                                                          <h2 class="mt-2 text-[1.6rem] font-bold text-brand-deep sm:text-[1.9rem]">{{gallerySection.title}}</h2>
+                                                                                                                            <p class="mt-2 text-[13px] leading-7 text-mist">{{gallerySection.text}}</p>
+                                                                                                                            </div>
+                                                                                                                          </div>
+                                                                                                                          <div class="mt-6 grid grid-cols-2 gap-3" data-list="gallery"></div>
+                                                                                                                                </div>
+                                                                                                                              </div>
+                                                                                                                              <div id="articles" class="scroll-mt-28">
+                                                                                                                                <div>
+                                                                                                                                  <div class="flex flex-wrap items-end justify-between gap-5 ">
+                                                                                                                                    <div class="max-w-xl">
+                                                                                                                                      <span class="inline-flex items-center gap-2 text-xs font-semibold text-mint">
+                                                                                                                                        <span class="h-px w-6 bg-mint/60" aria-hidden="true">
+                                                                                                                                        </span>{{articlesSection.eyebrow}}</span>
+                                                                                                                                        <h2 class="mt-2 text-[1.6rem] font-bold text-brand-deep sm:text-[1.9rem]">{{articlesSection.title}}</h2>
+                                                                                                                                          <p class="mt-2 text-[13px] leading-7 text-mist">{{articlesSection.text}}</p>
+                                                                                                                                          </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="mt-6 grid gap-3" data-list="articles"></div>
+                                                                                                                                                        </div>
+                                                                                                                                                      </div>
+                                                                                                                                                    </div>
+                                                                                                                                                  </section>
+<section id="contact" class="wf-section">
+  <div class="mx-auto max-w-6xl px-5 sm:px-8">
+    <div class="flex flex-wrap items-end justify-between gap-5">
+      <div class="max-w-xl">
+        <span class="inline-flex items-center gap-2 text-xs font-semibold text-mint">
+          <span class="h-px w-6 bg-mint/60" aria-hidden="true"></span>{{contactSection.eyebrow}}</span>
+        <h2 class="mt-2 text-[1.6rem] font-bold text-brand-deep sm:text-[1.9rem]">{{contactSection.title}}</h2>
+        <p class="mt-2 text-[13px] leading-7 text-mist">{{contactSection.text}}</p>
+      </div>
+    </div>
+
+    <div class="wf-board">
+      <!-- شماره تماس -->
+      <article class="wf-card wf-card--blue" aria-labelledby="wf-contact-title">
+        <div class="wf-head">
+          <span class="wf-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <h3 id="wf-contact-title" class="wf-title">شماره تماس</h3>
+        </div>
+        <div class="wf-phones">
+            <div class="wf-phone" data-wf-phone="office" hidden>
+              <span class="wf-phone-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <span class="wf-phone-text">
+                <small>تلفن ثابت کلینیک</small>
+                <b dir="ltr" data-wf-number></b>
+              </span>
+              <button type="button" class="wf-btn wf-btn--copy" data-wf-copy><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i-sm" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg><span>کپی شماره</span></button>
+              <a class="wf-btn wf-btn--call" href="tel:+980000000000" data-wf-call><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i-sm" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>تماس</span></a>
+            </div>
+            <div class="wf-phone" data-wf-phone="mobile" hidden>
+              <span class="wf-phone-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></span>
+              <span class="wf-phone-text">
+                <small>تلفن همراه</small>
+                <b dir="ltr" data-wf-number></b>
+              </span>
+              <button type="button" class="wf-btn wf-btn--copy" data-wf-copy><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i-sm" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg><span>کپی شماره</span></button>
+              <a class="wf-btn wf-btn--call" href="tel:+980000000000" data-wf-call><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i-sm" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>تماس</span></a>
+            </div>
+        </div>
+      </article>
+
+      <!-- آدرس -->
+      <article class="wf-card wf-card--light" aria-labelledby="wf-address-title">
+        <div class="wf-head">
+          <span class="wf-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <h3 id="wf-address-title" class="wf-title">آدرس کلینیک</h3>
+        </div>
+        <div class="wf-split">
+          <div class="wf-split-main">
+            <p class="wf-address" data-wf-address></p>
+            <a class="wf-btn wf-btn--outline" href="https://www.google.com/maps/search/?api=1&amp;query=Nova+Clinic" target="_blank" rel="noopener noreferrer" data-wf-map><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i-sm" aria-hidden="true"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg><span>مشاهده روی نقشه</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i-sm" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></a>
+          </div>
+          <svg class="wf-art" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" fill="#e9f5ff"/><path d="M22 52l24-8 28 8 24-8v44l-24 8-28-8-24 8z" fill="#bfe0f7"/><path d="M46 44v44M74 52v44" stroke="#fff" stroke-width="2" opacity=".8"/><path d="M60 14a20 20 0 0 0-20 20c0 16 20 36 20 36s20-20 20-36a20 20 0 0 0-20-20z" fill="#0874cf"/><circle cx="60" cy="34" r="7" fill="#fff"/></svg>
+        </div>
+      </article>
+
+      <!-- شبکه‌های اجتماعی -->
+      <article class="wf-card wf-card--blue" aria-labelledby="wf-social-title">
+        <div class="wf-head">
+          <span class="wf-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg></span>
+          <h3 id="wf-social-title" class="wf-title">شبکه‌های اجتماعی</h3>
+        </div>
+        <div class="wf-socials">
+            <a class="wf-social" data-wf-social="whatsapp" href="#" target="_blank" rel="noopener noreferrer" hidden>
+              <span class="wf-social-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span>
+              <span>واتساپ</span>
+            </a>
+            <a class="wf-social" data-wf-social="telegram" href="#" target="_blank" rel="noopener noreferrer" hidden>
+              <span class="wf-social-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg></span>
+              <span>تلگرام</span>
+            </a>
+            <a class="wf-social" data-wf-social="instagram" href="#" target="_blank" rel="noopener noreferrer" hidden>
+              <span class="wf-social-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></span>
+              <span>اینستاگرام</span>
+            </a>
+            <a class="wf-social" data-wf-social="bale" href="#" target="_blank" rel="noopener noreferrer" hidden>
+              <span class="wf-social-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i" aria-hidden="true"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg></span>
+              <span>بله</span>
+            </a>
+            <a class="wf-social" data-wf-social="website" href="#" target="_blank" rel="noopener noreferrer" hidden>
+              <span class="wf-social-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span>
+              <span>وب‌سایت</span>
+            </a>
+            <a class="wf-social" data-wf-social="other" href="#" target="_blank" rel="noopener noreferrer" hidden>
+              <span class="wf-social-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i" aria-hidden="true"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg></span>
+              <span>راه ارتباطی دیگر</span>
+            </a>
+        </div>
+      </article>
+
+      <!-- ساعات کاری -->
+      <article class="wf-card wf-card--light" aria-labelledby="wf-hours-title">
+        <div class="wf-head">
+          <span class="wf-ico"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wf-i" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+          <h3 id="wf-hours-title" class="wf-title">ساعات کاری</h3>
+        </div>
+        <div class="wf-split">
+          <ul class="wf-hours" data-wf-hours></ul>
+          <svg class="wf-art" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" fill="#e9f5ff"/><circle cx="60" cy="60" r="36" fill="#fff" stroke="#0874cf" stroke-width="6"/><path d="M60 38v24l16 9" fill="none" stroke="#0b4c91" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="60" cy="60" r="4" fill="#0b4c91"/></svg>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+                                                                                                                                                                                      <section class="bg-canvas py-20 sm:py-24">
+                                                                                                                                                                                        <div class="mx-auto max-w-5xl px-5 sm:px-8">
+                                                                                                                                                                                          <div class="reveal ">
+                                                                                                                                                                                            <div class="flex flex-wrap items-end justify-between gap-5 ">
+                                                                                                                                                                                              <div class="max-w-xl">
+                                                                                                                                                                                                <span class="inline-flex items-center gap-2 text-xs font-semibold text-mint">
+                                                                                                                                                                                                  <span class="h-px w-6 bg-mint/60" aria-hidden="true">
+                                                                                                                                                                                                  </span>{{faqSection.eyebrow}}</span>
+                                                                                                                                                                                                  <h2 class="mt-2 text-[1.6rem] font-bold text-brand-deep sm:text-[1.9rem]">{{faqSection.title}}</h2>
+                                                                                                                                                                                                    <p class="mt-2 text-[13px] leading-7 text-mist">{{faqSection.text}}</p>
+                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                </div>
+                                                                                                                                                                                                <div class="mt-8 grid gap-3 md:grid-cols-2" data-list="faq"></div>
+                                                                                                                                                                                              </div>
+                                                                                                                                                                                            </section>
+                                                                                                                                                                                          </main>
+                                                                                                                                                                                          <footer class="relative overflow-hidden bg-navy text-sky/70">
+                                                                                                                                                                                            <div aria-hidden="true" class="pointer-events-none absolute -left-28 bottom-[-9rem] h-72 w-72 rounded-full border border-white/10 shadow-[0_0_0_30px_rgba(255,255,255,0.03),0_0_0_60px_rgba(255,255,255,0.02)]">
+                                                                                                                                                                                            </div>
+                                                                                                                                                                                            <div class="relative mx-auto max-w-6xl px-5 pb-8 pt-16 sm:px-8">
+                                                                                                                                                                                              <div class="grid gap-10 md:grid-cols-[1.3fr_0.7fr_0.9fr]">
+                                                                                                                                                                                                <div>
+                                                                                                                                                                                                  <a aria-label="کلینیک نُــوا — صفحه اصلی" class="inline-flex min-h-[44px] items-center active" href="#home" data-status="active" aria-current="page">
+                                                                                                                                                                                                    <span class="flex items-center gap-3 ">
+                                                                                                                                                                                                      <span class="grid h-11 w-11 shrink-0 place-items-center">
+                                                                                                                                                                                                        <img
+                                                                                                                                                                                                           data-src="{{brand.logo}}"
+                                                                                                                                                                                                            alt="{{brand.latin}}"
+                                                                                                                                                                                                            class="h-full w-full object-contain"
+                                                                                                                                                                                                        />
+                                                                                                                                                                                                        </span>
+                                                                                                                                                                                                        <span class="leading-tight">
+                                                                                                                                                                                                          <strong class="block text-base font-bold tracking-[0.18em] text-white">{{brand.name}}</strong>
+                                                                                                                                                                                                            <small class="block text-[10px] tracking-[0.22em] text-sky/60">{{brand.latin}}</small>
+                                                                                                                                                                                                            </span>
+                                                                                                                                                                                                          </span>
+                                                                                                                                                                                                        </a>
+                                                                                                                                                                                                        <p class="mt-5 max-w-sm text-[13px] leading-8">{{footer.text}}</p>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <nav aria-label="دسترسی سریع">
+                                                                                                                                                                                                          <h3 class="text-[13px] font-semibold text-white">دسترسی سریع</h3>
+                                                                                                                                                                                                            <div class="mt-4 grid gap-1">
+                                                                                                                                                                                                              <a class="inline-flex min-h-[36px] items-center text-[12.5px] text-sky/65 transition hover:text-mint active" href="#services" data-status="active" aria-current="page">خدمات</a>
+                                                                                                                                                                                                                <a class="inline-flex min-h-[36px] items-center text-[12.5px] text-sky/65 transition hover:text-mint active" href="#doctor" data-status="active" aria-current="page">پزشک</a>
+                                                                                                                                                                                                                  <a class="inline-flex min-h-[36px] items-center text-[12.5px] text-sky/65 transition hover:text-mint active" href="#articles" data-status="active" aria-current="page">مقالات</a>
+                                                                                                                                                                                                                    <a class="inline-flex min-h-[36px] items-center text-[12.5px] text-sky/65 transition hover:text-mint active" href="#contact" data-status="active" aria-current="page">تماس با ما</a>
+                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                  </nav>
+                                                                                                                                                                                                                  <div>
+                                                                                                                                                                                                                    <h3 class="text-[13px] font-semibold text-white">ارتباط با ما</h3>
+                                                                                                                                                                                                                      <div class="mt-4 grid gap-2 text-[12.5px]">
+                                                                                                                                                                                                                        <a href="tel:+980000000000" class="inline-flex min-h-[36px] items-center gap-2 transition hover:text-mint">
+                                                                                                                                                                                                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-3.5 w-3.5 text-mint" aria-hidden="true">
+                                                                                                                                                                                                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                                                                                                                                                                                                            </path>
+                                                                                                                                                                                                                          </svg>[شماره تلفن ثابت]</a>
+                                                                                                                                                                                                                          <a href="tel:+980000000000" class="inline-flex min-h-[36px] items-center gap-2 transition hover:text-mint">
+                                                                                                                                                                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-3.5 w-3.5 text-mint" aria-hidden="true">
+                                                                                                                                                                                                                              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                                                                                                                                                                                                              </path>
+                                                                                                                                                                                                                            </svg>[شماره تلفن همراه]</a>
+                                                                                                                                                                                                                            <a class="inline-flex min-h-[36px] items-start gap-2 leading-7 transition hover:text-mint active" href="#contact" data-status="active" aria-current="page">
+                                                                                                                                                                                                                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin mt-1.5 h-3.5 w-3.5 shrink-0 text-mint" aria-hidden="true">
+                                                                                                                                                                                                                                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                                                                                                                                                                                                                </path>
+                                                                                                                                                                                                                                <circle cx="12" cy="10" r="3">
+                                                                                                                                                                                                                                </circle>
+                                                                                                                                                                                                                              </svg>[آدرس کامل کلینیک]</a>
+                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                        <div class="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-[11px] text-sky/45 sm:flex-row">
+                                                                                                                                                                                                                          <span>{{footer.copyright}}</span>
+                                                                                                                                                                                                                            <span>{{site.tagline}}</span>
+                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                                        </footer>
+                                                                                                                                                                                                                        <button type="button" aria-label="بازگشت به بالای صفحه" class="fixed bottom-5 left-5 z-40 grid h-12 w-12 place-items-center rounded-full border border-brand/15 bg-white/95 text-brand shadow-lift backdrop-blur transition-all duration-300 focus-visible:ring-2 focus-visible:ring-mint pointer-events-none translate-y-3 opacity-0">
+                                                                                                                                                                                                                          <svg viewBox="0 0 48 48" class="absolute inset-0 h-full w-full -rotate-90" aria-hidden="true">
+                                                                                                                                                                                                                            <circle cx="24" cy="24" r="20" fill="none" stroke="#e3f0fa" stroke-width="2.5">
+                                                                                                                                                                                                                            </circle>
+                                                                                                                                                                                                                            <circle cx="24" cy="24" r="20" fill="none" stroke="#28b8b0" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="125.66370614359172" stroke-dashoffset="125.66370614359172" style="transition:stroke-dashoffset 150ms linear">
+                                                                                                                                                                                                                            </circle>
+                                                                                                                                                                                                                          </svg>
+                                                                                                                                                                                                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up relative h-5 w-5" aria-hidden="true">
+                                                                                                                                                                                                                            <path d="m5 12 7-7 7 7">
+                                                                                                                                                                                                                            </path>
+                                                                                                                                                                                                                            <path d="M12 19V5">
+                                                                                                                                                                                                                            </path>
+                                                                                                                                                                                                                          </svg>
+                                                                                                                                                                                                                        </button>
+                                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                                      <!--/$-->
+                                                                                                                                                                                                                      <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false">
+                                                                                                                                                                                                                      </section>
+<div id="nx-modal" class="nx-modal" role="dialog" aria-modal="true" aria-label="جزئیات">
+  <div class="nx-card">
+    <button type="button" class="nx-close" aria-label="بستن">×</button>
+    <h3 class="nx-title"></h3>
+    <div class="nx-body"></div>
+    <a class="nx-cta" href="tel:+980000000000">تماس با کلینیک</a>
+  </div>
+</div>
+  <script src="./script.js"></script>
+</body>
+</html>
