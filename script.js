@@ -1,4 +1,6 @@
 const CONFIG = {
+  document.getElementById("ogImage").content =
+  new URL(CONFIG.brand.logo, document.baseURI).href;
   // اطلاعات اصلی
   clinicName: "کلینیک نُــوا",
   pageTitle: "کلینیک لاغری و زیبایی نُــــوا", // اگر خالی باشد، عنُــوان از clinicName ساخته می‌شود.
